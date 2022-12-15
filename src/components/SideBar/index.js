@@ -1,11 +1,6 @@
-import chillHop from '../../data'
-import { useMemo } from 'react';
 import SongItem from './SongItem';
-function SideBar({currentSong, setCurrentSong}) {
-  const songs = useMemo(() => {
-    const data = chillHop()
-    return data;
-  }, [])
+function SideBar({currentSong, setCurrentSong, songs}) {
+  
   return ( 
     <div className='sidebar'>
       <p>Library</p>
